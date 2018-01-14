@@ -1,0 +1,24 @@
+{
+  "name": "gotocore-hx",
+  "url": "https://github.com/varadig/GotoCoreHaxe",
+  "license": "MIT",
+  "tags": [
+    "flash",
+    "cpp",
+    "python",
+    "c#",
+    "neko",
+    "js",
+    "lime"
+  ],
+  "description": "",
+  "version": "1.0.1",
+  "classPath": "src",
+  "releasenote": "",
+  "contributors": [
+    "varadig"
+  ],
+  "dependencies": {
+    "lime": ""
+  }
+}
