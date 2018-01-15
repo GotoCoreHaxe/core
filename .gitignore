@@ -1,7 +1,2 @@
-.idea
-GotoCoreHaxe.iml
-bin
 build
-as3.hxml
-build.properties
-build.xml
+bin

@@ -3,7 +3,7 @@ package core.context;
 import core.base.CoreParameterHolder;
 import core.service.CoreServiceContainer;
 #if flash
-import flash.display.Stage;
+import flash.core.display.Stage;
 #end
 class CoreContext extends CoreParameterHolder {
     public static var instance:CoreContext;

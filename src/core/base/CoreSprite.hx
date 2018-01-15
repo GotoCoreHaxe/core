@@ -1,7 +1,7 @@
 package core.base;
 import core.base.CoreCallback.CallbackMap;
 import core.service.CoreServiceContainer;
-import openfl.display.Sprite;
+import openfl.core.display.Sprite;
 @:build(core.utils.CoreClassMacro.buildFields("core.openfl.sprite"))
 
 class CoreSprite extends Sprite{
