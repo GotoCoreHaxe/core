@@ -4,6 +4,8 @@ import core.utils.CoreUtils;
 import haxe.PosInfos;
 class CoreLoggerDebug implements ILogger {
 
+    public function new(){}
+
     public function addLog(message:Dynamic, pos:PosInfos):Void {
         this.addLogEntry(message, pos);
     }

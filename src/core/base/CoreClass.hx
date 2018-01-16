@@ -10,8 +10,7 @@ class CoreClass {
     }
     //TODO generate callbacsk with macro
     public var callbacks:CallbackMap = new CallbackMap();
-    @protected
-    var sc:CoreServiceContainer;
+    @protected    var sc:CoreServiceContainer;
 }
 
 

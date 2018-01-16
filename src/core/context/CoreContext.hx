@@ -2,8 +2,8 @@ package core.context;
 
 import core.base.CoreParameterHolder;
 import core.service.CoreServiceContainer;
-#if flash
-import flash.core.display.Stage;
+#if openfl
+import flash.display.Stage;
 #end
 class CoreContext extends CoreParameterHolder {
     public static var instance:CoreContext;
@@ -20,7 +20,7 @@ class CoreContext extends CoreParameterHolder {
     }
 
     public var sc:CoreServiceContainer;
-    #if flash
+    #if openfl
     public var stage:Stage;
     #end
 
