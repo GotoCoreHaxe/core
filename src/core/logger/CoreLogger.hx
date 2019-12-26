@@ -1,6 +1,6 @@
 package core.logger;
+import core.utils.CoreClassMacro.Params;
 import core.base.CoreClass;
-import core.base.CoreClassFactory.Params;
 import core.base.interfaces.IExecutable;
 import core.logger.base.ILogger;
 import core.notification.CoreNotification;

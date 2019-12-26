@@ -1,5 +1,5 @@
 ﻿package core.notification;
-import core.base.CoreClassFactory.Params;
+import core.utils.CoreClassMacro.Params;
 import core.base.CoreClass;
 import core.base.interfaces.IExecutable;
 

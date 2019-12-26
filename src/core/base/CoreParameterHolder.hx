@@ -1,10 +1,11 @@
 ﻿package core.base;
 
-import core.base.CoreClassFactory.Params;
+
+import core.utils.CoreClassMacro.Params;
 import core.base.interfaces.IExecutable;
 
 class CoreParameterHolder implements IExecutable {
-    @protected var params:Params = new Map();
+    @protected var params:Map<String,Dynamic> = new Map<String,Dynamic>();
 
     public function addParam(name:String, value:Dynamic):IExecutable {
         if (this.params[ name ] == null)

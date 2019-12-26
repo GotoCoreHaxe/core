@@ -3,8 +3,6 @@
 import core.base.interfaces.IExecutable;
 import core.service.CoreServiceContainer;
 
-typedef CallbackMap = Map<String, Array<IExecutable>>;
-
 class CoreCallback extends CoreSender {
     public static inline var GROUP:String = 'group';
     public static inline var CALLBACK:String = 'callback';

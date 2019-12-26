@@ -9,7 +9,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Haxe 3.4.7" jdkType="Haxe toolkit" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

@@ -11,7 +11,12 @@ class CoreLoggerDebug implements ILogger {
     }
 
     public function addLogEntry(message:Dynamic, ?pos:haxe.PosInfos):Void {
+
+        #if js
+        js.Browser.console.log(pos.className + "." + pos.methodName + "(" + pos.lineNumber + "):" + message);
+        #else
         trace(createEntryFrom(pos.className + "." + pos.methodName + "(" + pos.lineNumber + "):" + message));
+        #end
     }
 
     public function createEntryFrom(message:Dynamic):String {

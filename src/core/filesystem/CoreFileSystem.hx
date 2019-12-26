@@ -6,11 +6,10 @@
  */
 package core.filesystem;
 
-import core.filesystem.CoreFileSystem;
-import core.base.CoreClassFactory.Params;
 import core.base.CoreClass;
 import core.filesystem.base.IFileSystem;
 import core.notification.CoreNotificationContainer;
+import core.utils.CoreClassMacro.Params;
 
 class CoreFileSystem extends CoreClass {
     public static var instance:CoreFileSystem;
@@ -27,6 +26,7 @@ class CoreFileSystem extends CoreClass {
     /*SERVICES*/
     public static inline var GET_SUB_FOLDERS:String = 'core.filesystem.get.sub.folders';
     public static inline var GET_FILES:String = 'core.filesystem.get.files';
+    public static inline var GET_FILE_SIZE:String = 'core.filesystem.get.file.size';
     public static inline var FILE_EXISTS:String = 'core.filesystem.file.exists';
     public static inline var FOLDER_EXISTS:String = 'core.filesystem.folder.exists';
     public static inline var CREATE_FOLDER:String = 'core.filesystem.create.folder';
@@ -60,6 +60,7 @@ class CoreFileSystem extends CoreClass {
         super();
         CoreFileSystem.filesystem = filesystem;
         this.sc.registerService(GET_SUB_FOLDERS, this.serviceGetSubFolders);
+        this.sc.registerService(GET_FILE_SIZE,this.serviceGetFileSize);
         this.sc.registerService(GET_FILES, this.serviceGetFiles);
         this.sc.registerService(FILE_EXISTS, this.serviceFileExists);
         this.sc.registerService(FOLDER_EXISTS, this.serviceFolderExists);
@@ -91,6 +92,9 @@ class CoreFileSystem extends CoreClass {
         CoreNotificationContainer.getInstance();
     }
 
+    private function serviceGetFileSize(params:Params):Float {
+        return CoreFileSystem.filesystem.getFileSize(params[PATH]);
+    }
     private function serviceGetSubFolders(params:Params):Dynamic {
         return CoreFileSystem.filesystem.getSubFolders(params[PATH]);
     }

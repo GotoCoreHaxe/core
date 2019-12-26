@@ -1,5 +1,4 @@
 package cases;
-import core.base.CoreClassFactory.Params;
 import core.base.CoreCallback;
 import core.base.CoreTestCase;
 class CoreCallbackTest extends CoreTestCase {

@@ -1,5 +1,4 @@
 package cases;
-import core.base.CoreClassFactory.Params;
 import core.base.CoreTestCase;
 import core.notification.CoreListener;
 import core.notification.CoreNotification;

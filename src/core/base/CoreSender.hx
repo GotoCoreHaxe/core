@@ -10,5 +10,4 @@ class CoreSender extends CoreParameterHolder {
         this.name = name;
         this.collection = collection;
     }
-
 }

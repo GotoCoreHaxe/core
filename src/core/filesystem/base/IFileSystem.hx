@@ -12,6 +12,8 @@ interface IFileSystem {
     function appDirectory():String;
 //    DIRECTORIES
 
+    function getFileSize(path:String):Float;
+
     function getSubFolders(path:String):Dynamic;
 
     function getFiles(path:String,filter:Array<String>):Dynamic;
