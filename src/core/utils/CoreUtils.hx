@@ -1,5 +1,5 @@
 package core.utils;
-#if html5
+#if js
 import js.Browser;
 #end
 import core.base.CoreClass;
